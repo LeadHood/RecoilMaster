@@ -11,7 +11,7 @@ public class GameOver : MonoBehaviour
 
     private void OnEnable()
     {
-        scoreText.text = "Score: " + scoreCounter.GiveScore();
+        scoreText.text = "Score: " + scoreCounter.GetScore();
     }
 
     public void PlayAgain()

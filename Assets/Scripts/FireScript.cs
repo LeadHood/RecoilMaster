@@ -7,6 +7,7 @@ public class FireScript : MonoBehaviour
 {
     [SerializeField] GameObject bulletPre;
     [SerializeField] GameObject pistolGunPipe;
+    [SerializeField] GameObject pistolSound;
     [SerializeField] GameObject shotgunPipe;
     [SerializeField] GameObject shotGunSound;
     
@@ -42,6 +43,9 @@ public class FireScript : MonoBehaviour
                 else if(CurrentWeapon == Weapon.Pistol)
                 {
                     currentPipe = pistolGunPipe;
+
+                    Destroy(Instantiate(pistolSound), 1f);
+
                     Fire(1.5f);
                 }
             }

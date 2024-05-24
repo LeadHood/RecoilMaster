@@ -5,7 +5,7 @@ using TMPro;
 
 public class ScoreCounter : MonoBehaviour
 {
-    [SerializeField] float score;
+    [SerializeField] int score;
     TextMeshProUGUI textPrinter;
 
     private void Start()
@@ -13,12 +13,12 @@ public class ScoreCounter : MonoBehaviour
         textPrinter = gameObject.GetComponent<TextMeshProUGUI>();
     }
 
-    public float GiveScore()
+    public int GetScore()
     { 
-    return score;
+        return score;
     }
 
-    public void AddScore(float ScoreToAdd)
+    public void AddScore(int ScoreToAdd)
     {
         score += ScoreToAdd;
     }

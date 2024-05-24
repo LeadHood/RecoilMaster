@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.94, y: -0.89, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0.17693122, g: 0.5399312, b: 0.7924528, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 77f66f82a4474b241a83192b4a8d44f4, type: 3}
+  m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -123,8 +123,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 10.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -132,9 +132,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.5773587}
-      - {x: -0.5, y: -0.28866667}
-      - {x: 0.5, y: -0.28866667}
+    - - {x: 0.037522078, y: 5.492757}
+      - {x: -5.415398, y: -5.391675}
+      - {x: 5.401198, y: -5.3681397}
   m_UseDelaunayMesh: 0
 --- !u!50 &6907938320278252910
 Rigidbody2D:
@@ -179,6 +179,7 @@ MonoBehaviour:
   HeartParent: {fileID: 0}
   enemyParticle: {fileID: 1129609649416833699, guid: 3909c26d08593a74a90905763408c4cc, type: 3}
   audioSource: {fileID: 5120735026676975059, guid: 008b2eb092f1c70488efa12024748719, type: 3}
+  gameOverPanel: {fileID: 0}
 --- !u!114 &-6552574717275200792
 MonoBehaviour:
   m_ObjectHideFlags: 0

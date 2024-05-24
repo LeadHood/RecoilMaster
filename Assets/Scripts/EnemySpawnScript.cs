@@ -9,6 +9,13 @@ public class EnemySpawnScript : MonoBehaviour
     [SerializeField] float spawnTime = 2;
     float timer = 0;
 
+    ScoreCounter scoreCounter;
+
+    void Start()
+    {
+        scoreCounter = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreCounter>();
+    }
+
     void Update()
     {
         timer += Time.deltaTime;
@@ -17,6 +24,8 @@ public class EnemySpawnScript : MonoBehaviour
             SpawnEnemy();
             timer = 0;
         }
+
+        CalculateSpawntime(scoreCounter.GetScore());
     }
 
     void SpawnEnemy()
@@ -49,5 +58,17 @@ public class EnemySpawnScript : MonoBehaviour
         }
 
         Instantiate(enemyPrefab, position, Quaternion.identity);
+    }
+
+    private void CalculateSpawntime(int score)
+    {
+        if(score == 0)
+        {
+            spawnTime = 3;
+        }
+        else
+        {
+            spawnTime = 3 - Mathf.Log10(2 * score);
+        }
     }
 }
