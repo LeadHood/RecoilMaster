@@ -2258,8 +2258,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 13.331909, y: -18.127716}
+  m_SizeDelta: {x: 959.0361, y: 297.2504}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1071067292
 MonoBehaviour:
@@ -3038,6 +3038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPre: {fileID: 5702090209303224199, guid: 8fe2fd738395a3b4a957850a083d262d, type: 3}
   pistolGunPipe: {fileID: 429452617}
+  pistolSound: {fileID: 1365515984015880361, guid: 242e401fcd35b0c43bf56da104914387, type: 3}
   shotgunPipe: {fileID: 1877822976}
   shotGunSound: {fileID: 7439985337161250139, guid: eed5999e947de974db1d8b06ebd50f5f, type: 3}
   CurrentWeapon: 1
@@ -3957,7 +3958,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.179598, y: -1.6437073}
+  m_AnchoredPosition: {x: -5.1796265, y: -1.6437073}
   m_SizeDelta: {x: -821.553, y: -380.7223}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1749128486
